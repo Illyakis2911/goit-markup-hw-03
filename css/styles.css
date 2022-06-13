@@ -61,8 +61,8 @@ img {
 .mein-nav {
   display: flex;
   align-items: center;
-  border-bottom: 1px solid #ececec;
 }
+
 .logo {
   color: var(--accent-color);
   font-family: "Raleway";
@@ -295,7 +295,6 @@ img {
   background-color: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
-  margin-top: 94px;
 }
 
 .footer-logo {
@@ -357,13 +356,18 @@ img {
 
 /* PORTFOLIO */
 /* кнопки навігації */
+.projects {
+  border-top: 1px solid #ececec;
+  /* background-color: tomato;     */
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .projects-neim {
   display: none;
 }
 .button {
   display: flex;
   justify-content: center;
-  padding-top: 94px;
   padding-bottom: 34px;
 }
 .button .button-item:not(:last-child) {
@@ -372,6 +376,7 @@ img {
 .button .button-navigation {
   display: block;
   border: none;
+  padding: 6px 22px;
 
   border-radius: 4px;
   font-family: inherit;
