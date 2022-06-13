@@ -139,7 +139,6 @@ img {
 .hero {
   background-color: #2f303a;
   padding: 200px 0;
-  margin-bottom: 94px;
   text-align: center;
 }
 .hero-title {
@@ -177,12 +176,14 @@ img {
 /* Преімушіства */
 .feature {
   display: flex;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 .feature .item {
   width: 270px;
 }
 
-.feature .item:not(c) {
+.feature .item:not(:last-child) {
   margin-right: 30px;
 }
 
@@ -212,8 +213,6 @@ img {
 /* Чем мы занимаемся */
 
 .works-title {
-  margin-top: 94px;
-  margin-bottom: 50px;
   display: block;
 
   color: var(--basic-color-text);
@@ -224,9 +223,11 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
 }
-.works {
+.works-section {
   display: flex;
   justify-content: center;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 .works .item + .item {
   margin-left: 30px;
@@ -236,7 +237,6 @@ img {
 
 .team {
   background-color: #f5f4fa;
-  margin-top: 94px;
 }
 .team-list {
   display: flex;
@@ -251,7 +251,7 @@ img {
 
 .team-title {
   padding-top: 94px;
-  margin-bottom: 50px;
+  padding-bottom: 50px;
 
   color: var(--basic-color-text);
 
@@ -263,15 +263,18 @@ img {
 }
 
 .info {
-  background: var(--begraut-ccolor);
+  display: block;
+  justify-content: center;
 
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background: var(--begraut-ccolor);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
 
 .team-name {
-  margin-top: 30px;
   color: var(--basic-color-text);
   font-weight: 500;
   font-size: 16px;
@@ -280,7 +283,6 @@ img {
   letter-spacing: 0.03em;
 }
 .team-position {
-  padding-bottom: 30px;
   color: var(--secondary-text-color);
   font-size: 16px;
   line-height: 1.9;
@@ -296,10 +298,10 @@ img {
 }
 
 .footer-logo {
-  margin-top: 0;
-  margin-bottom: 20px;
-  padding: 0;
   display: block;
+  margin-top: 0;
+  padding: 0;
+  padding-bottom: 20px;
 
   color: var(--begraut-ccolor);
   font-family: Raleway, cursive;
@@ -325,7 +327,7 @@ img {
   color: var(--begraut-ccolor);
   font-style: normal;
   font-size: 14px;
-  line-height: 1.7;
+  line-height: 1.2;
   letter-spacing: 0.03em;
 }
 
